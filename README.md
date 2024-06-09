@@ -1,2 +1,2 @@
-# bootstrap5-sidebar
-Responsive Bootstrap 5 sidebar samples.
+# Bootstrap 5 Sidebar
+Responsive sidebar samples with Bootstrap Icons support.

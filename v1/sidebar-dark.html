@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sidebar Dark</title>
+    <link href="../assets/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="../assets/bootstrap-sidebar-v1.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Toggle for small devices -->
+    <nav class="d-md-none navbar navbar-expand-md navbar-dark bg-dark mb-2 border-bottom">
+        <div class="container-fluid">
+            <!--<img src="logo.png" class="navbar-brand img-fluid" alt="Logo" width="50" height="50">-->
+            <a class="navbar-brand" href="#">Sidebar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto px-0">
+                <div class="d-flex flex-column flex-shrink-0 p-3 vh-100 bg-dark sidebar shadow">
+                    <!--<div class="text-center"><img class="img-fluid" src="logo.png"></div>-->
+                    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-4">Sidebar</span>
+                    </a>
+                    <hr class="white-hr">
+                    <ul class="nav nav-pills flex-column mb-auto">
+                        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page"><i class="bi bi-house pe-none me-2"></i>Home</a></li>
+                        <li><a href="#" class="nav-link text-white"><i class="bi bi-speedometer pe-none me-2"></i> Dashboard</a></li>
+                        <li><a href="#" class="nav-link text-white"><i class="bi bi-table pe-none me-2"></i> Orders</a></li>
+                        <li><a href="#" class="nav-link text-white"><i class="bi bi-person pe-none me-2"></i> Customers</a></li>
+                    </ul>
+                    <hr class="white-hr">
+                    <div class="dropdown">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../assets/avatar.jpeg" width="32" height="32" class="rounded-circle me-2">
+                            <strong>daleffe</strong>
+                        </a>
+                        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser1">
+                            <li><a class="dropdown-item" href="#">New project...</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col py-3 toggle-sidebar-content">
+                <!-- Offcanvas Sidebar -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
+                    <div class="offcanvas-header">
+                        <!-- <div class="text-center"><img class="img-fluid" src="logo.png"></div> -->
+                        <h5 class="offcanvas-title" id="offcanvasSidebarLabel">Sidebar</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="nav nav-pills flex-column mb-auto">
+                            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page"><i class="bi bi-house"></i> Home</a></li>
+                            <li><a href="#" class="nav-link link-dark"><i class="bi bi-speedometer"></i> Dashboard</a></li>
+                            <li><a href="#" class="nav-link link-dark"><i class="bi bi-table"></i> Orders</a></li>
+                            <li><a href="#" class="nav-link link-dark"><i class="bi bi-person"></i> Customers</a></li>
+                        </ul>
+                        <hr>
+                        <div class="dropdown">
+                            <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../assets/avatar.jpeg" width="32" height="32" class="rounded-circle me-2">
+                                <strong>daleffe</strong>
+                            </a>
+                            <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser1">
+                                <li><a class="dropdown-item" href="#">New project...</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Sign out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="container-fluid">
+                    <div class="card">
+                        <h5 class="card-header">Featured</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="../assets/bootstrap.bundle.min.js"></script>
+</body>
+</html>

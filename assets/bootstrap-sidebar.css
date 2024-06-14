@@ -26,8 +26,6 @@ div.container-fluid {
   padding: 1rem;
 }
 
-.dropdown-toggle { outline: 0; }
-
 .bi {
   vertical-align: -.125em;
   fill: currentColor;
@@ -118,8 +116,12 @@ div.container-fluid {
 }
 
 @media (min-width: 768px) { .bd-placeholder-img-lg { font-size: 3.5rem; } }
-@media (max-width: 768px) {
+@media (max-height: 620px),(max-width: 768px) {
   aside { display: none !important; }
   aside.only-icons + div.container-fluid { margin-left: 0 !important; }
   div.container-fluid { margin-left: 0 !important; }
+}
+
+@media (max-height: 620px) {
+  nav.navbar-expand-md { display: flex !important; }
 }

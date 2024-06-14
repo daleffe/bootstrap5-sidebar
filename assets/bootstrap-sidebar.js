@@ -1,8 +1,16 @@
 /* global bootstrap: false */
 (() => {
   'use strict'
-  const tooltipTriggerList = Array.from(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  const selectors = '[data-bs-toggle="tooltip"], [data-bs-toggle-alt="tooltip"]';
+
+  const tooltipTriggerList = Array.from(document.querySelectorAll(selectors));
+
   tooltipTriggerList.forEach(tooltipTriggerEl => {
-    new bootstrap.Tooltip(tooltipTriggerEl)
-  })
-})()
+    var tooltip = new bootstrap.Tooltip(tooltipTriggerEl);
+    tooltipTriggerEl.addEventListener('click', function (event) {
+      if (event.target.tagName.toLowerCase() === 'a') {
+        tooltip.hide();
+      }
+    });
+  });
+})();

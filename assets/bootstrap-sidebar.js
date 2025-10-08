@@ -7,10 +7,6 @@
 
   tooltipTriggerList.forEach(tooltipTriggerEl => {
     var tooltip = new bootstrap.Tooltip(tooltipTriggerEl);
-    tooltipTriggerEl.addEventListener('click', function (event) {
-      if (event.target.tagName.toLowerCase() === 'a') {
-        tooltip.hide();
-      }
-    });
+    tooltipTriggerEl.addEventListener('click', function (_) { tooltip.hide(); });
   });
 })();
